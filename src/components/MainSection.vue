@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-16 bg-white content-center mt-24">
+  <div class="w-full bg-white content-center mt-24">
     <div class="flex flex-row h-full px-8 mx-auto max-w-screen-lg">
       <div class="w-1/2">
         <p class="text-5xl font-poppins font-medium text-brand-gray-2">
