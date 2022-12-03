@@ -13,6 +13,12 @@
     image="undraw_lost.png"
     :reverse="true"
   />
+  <CustomSection
+    title="DYNAMIC READING"
+    describe="Dynamic and relaxed reading is one of the best ways to acquire information. The ideal is to learn to read informative texts, scientific articles, textbooks, educational books, etc."
+    image="undraw_bibliophile.png"
+  />
+  <FooterNav />
 </template>
 
 <script lang="ts">
@@ -20,6 +26,7 @@ import { defineComponent } from "vue";
 import MainNav from "@/components/MainNav.vue";
 import MainSection from "@/components/MainSection.vue";
 import CustomSection from "@/components/CustomSection.vue";
+import FooterNav from "@/components/Footer.vue";
 
 export default defineComponent({
   name: "HomePage",
@@ -27,6 +34,7 @@ export default defineComponent({
     MainNav,
     MainSection,
     CustomSection,
+    FooterNav,
   },
 });
 </script>
