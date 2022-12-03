@@ -1,6 +1,5 @@
 <!-- eslint-disable vue/valid-template-root -->
 <template>
-  <MainNav />
   <MainSection />
   <CustomSection
     title="READING PRACTICE IMPROVES VOCABULARY"
@@ -18,7 +17,6 @@
     describe="Dynamic and relaxed reading is one of the best ways to acquire information. The ideal is to learn to read informative texts, scientific articles, textbooks, educational books, etc."
     image="undraw_bibliophile.png"
   />
-  <FooterNav />
 </template>
 
 <script lang="ts">
@@ -31,10 +29,8 @@ import FooterNav from "@/components/Footer.vue";
 export default defineComponent({
   name: "HomePage",
   components: {
-    MainNav,
     MainSection,
     CustomSection,
-    FooterNav,
   },
 });
 </script>
