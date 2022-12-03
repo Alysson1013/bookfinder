@@ -18,17 +18,16 @@ export default createStore<State>({
     loading: false,
   },
   mutations: {
-    LOADING_STATUS(state, loading) {
-      state.loading = loading;
-    },
     async SEARCH_BOOKS(state, query) {
-      const { commit } = VuexUseStore();
+      try {
+        state.loading = true;
 
-      commit("LOADING_STATUS", true);
-
-      state.books = await fetchBooks(query);
-
-      commit("LOADING_STATUS", true);
+        state.books = await fetchBooks(query);
+      } catch (err) {
+        console.log(err);
+      } finally {
+        state.loading = false;
+      }
     },
   },
 });

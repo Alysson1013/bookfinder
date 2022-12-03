@@ -21,10 +21,8 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import MainNav from "@/components/MainNav.vue";
 import MainSection from "@/components/MainSection.vue";
 import CustomSection from "@/components/CustomSection.vue";
-import FooterNav from "@/components/Footer.vue";
 
 export default defineComponent({
   name: "HomePage",

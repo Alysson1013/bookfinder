@@ -13,6 +13,7 @@
         </p>
         <button
           class="bg-brand-green-1 hover:brand-green-2 py-2 px-4 text-white font-poppins font-semibold rounded-md text-sm w-40 mt-8"
+          @click="goToSearch"
         >
           Search now
         </button>
@@ -28,5 +29,10 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "MainSection",
+  methods: {
+    goToSearch() {
+      this.$router.push("/search");
+    },
+  },
 });
 </script>
