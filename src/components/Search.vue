@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="@/assets/undraw_book_lover.png" class="h-80 mt-20" />
+    <img src="@/assets/undraw_book_lover.png" class="h-80 mt-40" />
   </div>
 </template>
 <script>

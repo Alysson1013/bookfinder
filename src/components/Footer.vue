@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-12 mt-20 bottom-0 bg-brand-gray">
+  <div class="w-full h-12 mt-80 bg-brand-gray">
     <div
       class="flex flex-nowrap flex-row justify-between h-full px-8 mx-auto max-w-screen-lg"
     >
