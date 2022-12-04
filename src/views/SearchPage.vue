@@ -16,9 +16,18 @@
       <template v-if="!!store.state.loading">
         <Loading />
       </template>
-      <template v-else>
+      <template v-if="books.length === 0">
         <Search />
       </template>
+      <div class="w-full grid grid-cols-3 gap-3 mt-20">
+        <template v-for="book in books" :key="book.id">
+          <BookCard
+            :title="book.volumeInfo.title"
+            :describe="book.volumeInfo.description"
+            :image="book?.volumeInfo?.imageLinks?.thumbnail"
+          />
+        </template>
+      </div>
     </div>
   </div>
 </template>
@@ -26,6 +35,7 @@
 import { defineComponent, computed } from "vue";
 import Search from "@/components/Search.vue";
 import Loading from "@/components/Loading.vue";
+import BookCard from "@/components/BookCard.vue";
 import { useStore } from "vuex";
 
 export default defineComponent({
@@ -33,6 +43,7 @@ export default defineComponent({
   components: {
     Search,
     Loading,
+    BookCard,
   },
   data() {
     return {
@@ -48,7 +59,7 @@ export default defineComponent({
     };
   },
   methods: {
-    handleInput(event: any) {
+    handleInput() {
       this.store.commit("SEARCH_BOOKS", this.query);
     },
   },
