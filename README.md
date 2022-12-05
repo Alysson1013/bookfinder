@@ -23,7 +23,7 @@ This project was done in tailwind, vue and vuex. Hosted at Vercel
  <div>
    
 ##
-## Projects Image
+### Projects Images
 ### Home
 ![](src/assets/Home.png)
 ### Books
