@@ -14,7 +14,7 @@
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This project was done in tailwind, vue and vuex. Hosted at Vercel
 
  <div>
       <a href="https://www.instagram.com/alysson_1013/" target="_blank"><img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" target="_blank"></a>
